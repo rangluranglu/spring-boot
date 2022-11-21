@@ -1,0 +1,19 @@
+plugins {
+    id "java"
+    id "org.springframework.boot.conventions"
+}
+description = "Spring Boot demo"
+group 'org.springframework.boot'
+version '3.0.0-SNAPSHOT'
+
+
+dependencies {
+    implementation(project(":spring-boot-project:spring-boot:"))
+    implementation(project(":spring-boot-project:spring-boot-autoconfigure:"))
+    implementation(project(":spring-boot-project:spring-boot-starters:spring-boot-starter"))
+    implementation(project(":spring-boot-project:spring-boot-starters:spring-boot-starter-tomcat:"))
+    implementation(project(":spring-boot-project:spring-boot-starters:spring-boot-starter-web"))
+
+    implementation('org.springframework:spring-context:6.0.0')
+    implementation('org.springframework:spring-beans:6.0.0')
+}

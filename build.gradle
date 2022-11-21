@@ -7,7 +7,6 @@ plugins {
 description = "Spring Boot Build"
 
 defaultTasks 'build'
-
 nohttp {
 	allowlistFile = project.file("src/nohttp/allowlist.lines")
 	source.exclude "**/bin/**"
